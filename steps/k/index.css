@@ -1,0 +1,37 @@
+.notes {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.notes .list {
+  padding: 8px;
+  width: 264px;
+  border-right: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.notes .list li {
+  padding: 12px;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  margin: 4px;
+  border-radius: 4px;
+}
+
+.notes .list li.active {
+  border-color: #0092C3;
+  box-shadow: 0 0 5px #0092C3;
+}
+
+.notes .list p, .notes .list h3 {
+  margin: 0;
+}
+
+.notes .list a {
+  text-decoration: none;
+  color: black;
+}
+
+.notes .detail {
+  flex: 1;
+  height: 100%;
+}

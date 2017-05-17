@@ -1,0 +1,24 @@
+<template>
+  <require from="./detail.css"></require>
+
+  <form class="note" submit.trigger="save()">
+    <div class="title">
+      <input type="text" value.bind="note.title" placeholder="title">
+
+      <div class="notebook-selector">
+        <span>In </span>
+        <select value.bind="note.notebookId">
+          <option repeat.for="notebook of notebooks" model.bind="notebook.id">${notebook.title}</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="body">
+      <textarea value.bind="note.body" placeholder="body"></textarea>
+    </div>
+
+    <div class="button-bar">
+      <button type="submit">Save</button>
+    </div>
+  </form>
+</template>

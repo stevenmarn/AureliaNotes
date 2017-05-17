@@ -1,0 +1,20 @@
+<template>
+  <require from="./index.css"></require>
+
+  <section class="notes au-animate">
+    <nav class="list">
+      <ul>
+        <li repeat.for="note of noteList" class="${note.isActive ? 'active' : ''}">
+          <a route-href="route: edit; params.bind: {noteId: note.id}">
+            <h3>${note.title}</h3>
+            <p>${note.body}</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="detail">
+      <router-view></router-view>
+    </section>
+  </section>
+</template>

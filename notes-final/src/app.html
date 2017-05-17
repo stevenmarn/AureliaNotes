@@ -1,0 +1,25 @@
+<template>
+  <require from="./app.css"></require>
+  <require from="resources/elements/loading-indicator"></require>
+
+  <loading-indicator loading.bind="router.isNavigating"></loading-indicator>
+
+  <header>
+    <h1>Aurelia Notes</h1>
+    <a class="button" href="#/notes/new">New Note</a>
+  </header>
+
+  <main>
+    <nav class="main">
+      <ul>
+        <li repeat.for="item of router.navigation" class="${item.isActive ? 'active' : ''}">
+          <a href.bind="item.href" title.bind="item.title">
+            <i class="fa fa-${item.settings.icon}"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <router-view></router-view>
+  </main>
+</template>

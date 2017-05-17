@@ -1,0 +1,46 @@
+.note {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.note div.body {
+  flex: 1;
+  position: relative;
+}
+
+.note div.notebook-selector {
+  float: right;
+  margin-top: 8px;
+}
+
+.note div.notebook-selector span {
+  position: relative;
+  top: 2px;
+}
+
+.note input {
+  font-size: 28px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.note textarea {
+  background: transparent;
+  resize: none;
+  outline: none;
+  border: none;
+  height: 100%;
+  font-size: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+}
+
+.note .button-bar {
+  text-align: right;
+}

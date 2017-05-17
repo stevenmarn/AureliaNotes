@@ -1,0 +1,24 @@
+<template>
+  <require from="./app.css"></require>
+
+  <header>
+    <h1>Aurelia Notes</h1>
+    <a class="button" href="#/notes/new">New Note</a>
+  </header>
+
+  <main>
+<nav class="main">
+  <ul >
+    <li repeat.for="route of router.navigation" class="${route.isActive ?  'active' : ''}">
+      <a href.bind="route.href" title.bind="route.title">
+        <i class="fa fa-${route.settings.icon}"></i>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+
+    <router-view></router-view>
+  </main>
+</template>

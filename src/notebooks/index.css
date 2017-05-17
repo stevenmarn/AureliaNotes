@@ -1,0 +1,41 @@
+section.notebook-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+section.notebook-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+section.notebook-list li {
+  border-bottom: 1px solid #F1F0F0;
+  padding: 12px;
+}
+
+section.notebook-list h3 {
+  margin: 0;
+}
+
+section.notebook-list a {
+  text-decoration: none;
+  color: black;
+}
+
+section.notebook-list > form {
+  background-color: #F1F0F0;
+  padding: 12px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+section.notebook-list > form input {
+  font-size: 20px;
+  position: relative;
+  top: 2px;
+}
+
+section.notebook-list > div {
+  flex: 1;
+}

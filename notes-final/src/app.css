@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  padding: 12px;
+  background-color: #F1F0F0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 64px;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+header a.button {
+  float: right;
+  text-decoration: none;
+  margin-top: 4px;
+}
+
+main {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+nav.main {
+  background: #0092C3;
+  border-right: 1px solid gray;
+}
+
+nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav.main > ul > li > a {
+  padding: 16px;
+  display: block;
+}
+
+nav.main > ul > li > a > i {
+  color: white;
+  font-size: 22px !important;
+}
+
+nav.main > ul > li.active > a > i {
+  text-shadow: 0 0 20px white;
+}
+
+nav.main > ul > li:last-child {
+  position: absolute;
+  bottom: 0;
+}
+
+main > router-view {
+  flex: 1;
+  border-top: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+button, a.button {
+  padding: 6px 12px;
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+router-view {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+section.au-enter-active {
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+ai-dialog > ai-dialog-header {
+  background: #0092C3;
+  color: white;
+  border-radius: 4px 4px 0 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
